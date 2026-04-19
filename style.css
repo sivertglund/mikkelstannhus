@@ -208,16 +208,16 @@ section {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #1A6B9C, #145980);
+  background: linear-gradient(135deg, #a0322a, #8B1A1A);
   color: var(--white);
-  box-shadow: 0 2px 8px rgba(26, 107, 156, 0.25);
+  box-shadow: 0 2px 8px rgba(139, 26, 26, 0.25);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #1f7db5, #1A6B9C);
+  background: linear-gradient(135deg, #b33a31, #a0322a);
   color: var(--white);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(26, 107, 156, 0.35);
+  box-shadow: 0 6px 20px rgba(139, 26, 26, 0.35);
 }
 
 .btn-secondary {
@@ -252,8 +252,8 @@ section {
 
 /* Subtle pulse on nav CTA */
 @keyframes subtlePulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(26, 107, 156, 0.4); }
-  50% { box-shadow: 0 0 0 6px rgba(26, 107, 156, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(139, 26, 26, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(139, 26, 26, 0); }
 }
 
 .header .btn-nav {
