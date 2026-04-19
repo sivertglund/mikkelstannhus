@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priser — Mikkels Tannhus</title>
+  <meta name="description" content="Prisinformasjon for tannbehandling hos Mikkels Tannhus. Gebyrer og hygienetillegg er inkludert i prisen. Kontakt oss for prisoverslag.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== DEMO BANNER ===== -->
+  <div class="demo-banner">Demo — laget av sivertlund.dev@gmail.com</div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.jpg" alt="Mikkels Tannhus" loading="eager">
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="tjenester.html">Tjenester</a></li>
+          <li><a href="priser.html" class="active">Priser</a></li>
+          <li><a href="teamet.html">Teamet</a></li>
+          <li><a href="om.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html" class="btn btn-primary btn-nav">Bestill time</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Meny">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-teeth" aria-hidden="true">
+      <svg class="page-hero-tooth pht-1" viewBox="0 0 24 24" fill="rgba(255,255,255,0.06)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+      <svg class="page-hero-tooth pht-2" viewBox="0 0 24 24" fill="rgba(255,255,255,0.04)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+      <svg class="page-hero-tooth pht-3" viewBox="0 0 24 24" fill="rgba(255,255,255,0.05)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+    </div>
+    <div class="container">
+      <h1>Priser</h1>
+      <p>Oversiktlig prisliste for alle våre behandlinger.</p>
+    </div>
+  </section>
+
+  <!-- ===== PRISLISTE ===== -->
+  <section class="prices-page">
+    <div class="container">
+
+      <!-- Viktig merknad -->
+      <div class="price-notes-box fade-in">
+        <h3>Viktig informasjon</h3>
+        <ul>
+          <li>Hos oss er gebyrer/hygienetillegg inkludert i prisen. Så ikke noe overraskende tillegg.</li>
+          <li>Vi benytter oss kun av norske tannteknikere som vi har opparbeidet et godt samarbeid med.</li>
+        </ul>
+      </div>
+
+      <!-- Konsultasjon og undersøkelse -->
+      <div class="price-category fade-in">
+        <div class="price-category-header">
+          <div class="price-category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6" r="4"/><path d="M8 10l2 12"/><path d="M16 3c-1 0-2 .7-2.2 1.5-.3 1-.8 1.5-1.3 2-.5.8-.2 1.5.3 2 .3.8.3 1.2.5 2.2.3 1.5.5 2.5 1 2.5s.7-1 1-2.5c.3-1.5.5-1.5 1-2.5.5-1 .5-1.5 1-2.5S18 3 16 3Z"/></svg>
+          </div>
+          <h2>Konsultasjon og undersøkelse</h2>
+        </div>
+        <div class="price-card">
+          <table class="price-table">
+            <tbody>
+              <tr><td>Undersøkelse, 2 røntgenbilder og grundig rens</td><td>kr 1 522,-</td></tr>
+              <tr><td>Bedøvelse</td><td>kr 198,-</td></tr>
+              <tr><td>Panorama røntgen</td><td>kr 1 010,-</td></tr>
+              <tr><td>Intraoralt røntgen <span class="price-detail">pr stk</span></td><td>kr 141,-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Fyllinger -->
+      <div class="price-category fade-in">
+        <div class="price-category-header">
+          <div class="price-category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><rect x="10" y="7" width="4" height="5" rx="1" fill="currentColor" opacity="0.2"/></svg>
+          </div>
+          <h2>Fyllinger</h2>
+        </div>
+        <div class="price-card">
+          <table class="price-table">
+            <tbody>
+              <tr><td>Tannfarget fylling 1 flate</td><td>fra kr 675,- til 1 434,-</td></tr>
+              <tr><td>Tannfarget fylling 2 flater</td><td>fra kr 1 633,- til 2 155,-</td></tr>
+              <tr><td>Tannfarget fylling 3 flater</td><td>fra kr 2 035,- til 2 683,-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Kroner -->
+      <div class="price-category fade-in">
+        <div class="price-category-header">
+          <div class="price-category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10L7 4L10 8L12 3L14 8L17 4L19 10"/><path d="M5 10C5 10 5 12 5 13C5 15 7 16 12 16C17 16 19 15 19 13C19 12 19 10 19 10"/><path d="M7 16L6 22H18L17 16"/></svg>
+          </div>
+          <h2>Kroner</h2>
+        </div>
+        <div class="price-card">
+          <table class="price-table">
+            <tbody>
+              <tr><td>Krone <span class="price-detail">inkl. tannteknikk (norsk produsert, fullkeramisk)</span></td><td>fra kr 7 800,-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Rotbehandling -->
+      <div class="price-category fade-in">
+        <div class="price-category-header">
+          <div class="price-category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><path d="M9 13L8.5 18" stroke-dasharray="2 2"/><path d="M12 12L12 17" stroke-dasharray="2 2"/><path d="M15 13L15.5 18" stroke-dasharray="2 2"/></svg>
+          </div>
+          <h2>Rotbehandling</h2>
+        </div>
+        <div class="price-card">
+          <table class="price-table">
+            <tbody>
+              <tr><td>Rotbehandling/fylling 1 kanal</td><td>kr 5 010,-</td></tr>
+              <tr><td>Rotbehandling/fylling 2 kanaler</td><td>kr 5 662,-</td></tr>
+              <tr><td>Rotbehandling/fylling 3 kanaler</td><td>kr 7 106,-</td></tr>
+              <tr><td>Rotbehandling/fylling 4 kanaler</td><td>kr 7 810,-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Kirurgi -->
+      <div class="price-category fade-in">
+        <div class="price-category-header">
+          <div class="price-category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C10.5 4 9.5 4.8 9.2 6C8.8 7.2 8 7.8 7.3 8.8C6.5 9.8 6.8 11 7.2 12C7.5 13 7.8 13.8 8 14.8C8.3 16 8.5 17 9.3 17C10 17 10 16 10.3 14.5"/><path d="M12 4C13.5 4 14.5 4.8 14.8 6C15.2 7.2 16 7.8 16.7 8.8C17.5 9.8 17.2 11 16.8 12C16.5 13 16.2 13.8 16 14.8C15.7 16 15.5 17 14.7 17C14 17 14 16 13.7 14.5"/><path d="M8 2L10 6"/><path d="M16 2L14 6"/></svg>
+          </div>
+          <h2>Kirurgi</h2>
+        </div>
+        <div class="price-card">
+          <table class="price-table">
+            <tbody>
+              <tr><td>Fjerning av visdomstann <span class="price-detail">etter trygderefusjon</span></td><td>ca. kr 2 434,-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Bleking -->
+      <div class="price-category fade-in">
+        <div class="price-category-header">
+          <div class="price-category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C10 4 8.5 5.2 8 6.8C7.5 8.5 6.2 9 5.3 10.2C4.5 11.5 4.8 13 5.3 14.2C5.8 15.5 6.2 16.5 6.5 17.8C7 19.5 7.3 21.5 8.5 21.5C9.7 21.5 9.7 19.5 10.2 17.8C10.7 16 11 15.5 12 15.5C13 15.5 13.3 16 13.8 17.8C14.3 19.5 14.3 21.5 15.5 21.5C16.7 21.5 17 19.5 17.5 17.8C17.8 16.5 18.2 15.5 18.7 14.2C19.2 13 19.5 11.5 18.7 10.2C17.8 9 16.5 8.5 16 6.8C15.5 5.2 14 4 12 4Z"/><path d="M3 3L4 5L3 7L1 6L3 3Z"/><path d="M20 2L21 4L20 6L18 5L20 2Z"/></svg>
+          </div>
+          <h2>Bleking</h2>
+        </div>
+        <div class="price-card">
+          <table class="price-table">
+            <tbody>
+              <tr><td>Tannbleking, 2 kjever</td><td>kr 4 863,-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Implantat -->
+      <div class="price-category fade-in">
+        <div class="price-category-header">
+          <div class="price-category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C10 2 8.5 3.2 8 4.8C7.5 6.5 6.2 7 5.3 8.2C4.5 9.5 4.8 11 5.3 12.2C5.8 13.5 6.2 14.5 6.5 15.8C7 17.5 7.3 19 8.5 19C9.7 19 9.7 17.5 10.2 15.8C10.7 14 11 13.5 12 13.5"/><path d="M12 2V13.5"/><rect x="10" y="13" width="4" height="2" rx="0.5"/><path d="M10.5 15L10 22"/><path d="M13.5 15L14 22"/><path d="M10 17H14"/><path d="M10.2 19H13.8"/></svg>
+          </div>
+          <h2>Implantat</h2>
+        </div>
+        <div class="price-card">
+          <table class="price-table">
+            <tbody>
+              <tr><td>Implantatundersøkelse med røntgenbilder, behandlingsforslag, og prisoverslag <span class="price-detail">uforpliktende</span></td><td>kr 2 288,-</td></tr>
+              <tr><td>Et implantat med krone <span class="price-detail">alt inkludert, Straumann + norsk tannteknikk</span></td><td>kr 33 280,-</td></tr>
+              <tr><td>To implantater og to kroner</td><td>kr 62 000,-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ===== MERKNADER ===== -->
+      <div class="price-notes-box fade-in">
+        <h3>Viktig å vite</h3>
+        <ul>
+          <li>Vi gir alltid prisoverslag før behandling starter.</li>
+          <li>Gebyrer og hygienetillegg er inkludert i alle våre priser.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <div class="cta-tooth-decor" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+        </div>
+        <h2>Klar for å bestille time?</h2>
+        <p>Ring oss eller send en melding. Vi gir alltid prisoverslag før behandling.</p>
+        <span class="cta-phone"><a href="tel:22207292">22 20 72 92</a></span>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Bestill time</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpg" alt="Mikkels Tannhus">
+          </a>
+          <p>Tannklinikk i Oslo sentrum. Gebyrer og hygienetillegg er alltid inkludert i prisen.</p>
+        </div>
+        <div>
+          <h4>Hurtiglenker</h4>
+          <ul class="footer-links">
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="priser.html">Priser</a></li>
+            <li><a href="teamet.html">Teamet</a></li>
+            <li><a href="om.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Åpningstider</h4>
+          <ul class="footer-links">
+            <li>Man–fre: 08–16</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul class="footer-links">
+            <li><a href="tel:22207292">22 20 72 92</a></li>
+            <li><a href="mailto:mikkelstannhus@gmail.com">mikkelstannhus@gmail.com</a></li>
+            <li>Dopsgate 7</li>
+            <li>0177 Oslo</li>
+          </ul>
+          <div style="margin-top: 16px;">
+            <a href="https://www.facebook.com/Mikkels-Tannhus-194707723928622/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+            </a>
+          </div>
+          <div style="margin-top: 16px;">
+            <a href="kontakt.html" class="btn btn-primary btn-nav">Bestill time</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Mikkels Tannhus</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== DEMO BANNER STICKY ===== -->
+  <div class="demo-banner-sticky">Demo — laget av sivertlund.dev@gmail.com</div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikkels Tannhus — Tannlege i Oslo, Fredensborg</title>
+  <meta name="description" content="Mikkels Tannhus er en hyggelig tannklinikk på Fredensborg i Oslo sentrum. Alt innen moderne tannbehandling med kort ventetid og gratis parkering. Ring 22 20 72 92.">
+  <meta name="keywords" content="tannlege oslo, tannklinikk fredensborg, tannlege sentrum, implantat oslo, estetisk tannbehandling, mikkels tannhus">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mikkels Tannhus — Tannlege i Oslo">
+  <meta property="og:description" content="Hyggelig tannklinikk på Fredensborg i Oslo sentrum. Moderne utstyr, kort ventetid og gratis parkering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mikkelstannhus.no/">
+  <meta property="og:locale" content="nb_NO">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org LocalBusiness + Dentist -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Mikkels Tannhus",
+    "url": "https://www.mikkelstannhus.no",
+    "telephone": "+47 22 20 72 92",
+    "email": "mikkelstannhus@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dopsgate 7",
+      "addressLocality": "Oslo",
+      "postalCode": "0177",
+      "addressCountry": "NO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 59.9195392,
+      "longitude": 10.74711739999998
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "16:00" }
+    ],
+    "priceRange": "$$",
+    "description": "Hyggelig tannklinikk på Fredensborg i Oslo sentrum med topp moderne utstyr og kort ventetid."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== DEMO BANNER ===== -->
+  <div class="demo-banner">Demo — laget av sivertlund.dev@gmail.com</div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.jpg" alt="Mikkels Tannhus" loading="eager">
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="tjenester.html">Tjenester</a></li>
+          <li><a href="priser.html">Priser</a></li>
+          <li><a href="teamet.html">Teamet</a></li>
+          <li><a href="om.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html" class="btn btn-primary btn-nav">Bestill time</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Meny">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <!-- Floating tooth decorations -->
+    <div class="hero-teeth-decor" aria-hidden="true">
+      <svg class="floating-tooth ft-1" viewBox="0 0 24 24" fill="rgba(255,255,255,0.06)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+      <svg class="floating-tooth ft-2" viewBox="0 0 24 24" fill="rgba(255,255,255,0.04)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+      <svg class="floating-tooth ft-3" viewBox="0 0 24 24" fill="rgba(255,255,255,0.05)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+      <svg class="floating-tooth ft-4" viewBox="0 0 24 24" fill="rgba(255,255,255,0.03)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+      <svg class="floating-tooth ft-5" viewBox="0 0 24 24" fill="rgba(255,255,255,0.04)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Tannlege på Fredensborg i Oslo sentrum</h1>
+        <p class="hero-lead">Hyggelig tannklinikk med topp moderne utstyr og personlig service.</p>
+        <ul class="hero-highlights">
+          <li>Alt innen moderne tannbehandling — implantat, estetikk og mer</li>
+          <li>Kort ventetid og gratis parkering rett utenfor</li>
+          <li>Leica mikroskop og intraoral skanner</li>
+        </ul>
+        <div class="hero-buttons">
+          <a href="kontakt.html" class="btn btn-primary btn-tooth-icon">
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg>
+            Bestill time
+          </a>
+          <a href="tel:22207292" class="btn btn-outline">Ring oss: 22 20 72 92</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/tannlegestol.jpg" alt="Moderne behandlingsrom hos Mikkels Tannhus" class="hero-img" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BADGES ===== -->
+  <section class="trust">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-card fade-in">
+          <div class="trust-icon">
+            <!-- Location pin -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22S4 16 4 10a8 8 0 1 1 16 0c0 6-8 12-8 12Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Sentral beliggenhet</h3>
+          <p>Fredensborg, midt i Oslo sentrum</p>
+        </div>
+        <div class="trust-card fade-in">
+          <div class="trust-icon">
+            <!-- Clock -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Kort ventetid</h3>
+          <p>Presise og tilgjengelige — også for akutte tilfeller</p>
+        </div>
+        <div class="trust-card fade-in">
+          <div class="trust-icon">
+            <!-- Car/parking -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 11V5a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v6"/><path d="M15 11V5a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3v6"/><text x="12" y="18" text-anchor="middle" font-size="8" fill="currentColor" stroke="none" font-weight="bold">P</text></svg>
+          </div>
+          <h3>Gratis parkering</h3>
+          <p>Egne plasser rett utenfor inngangen</p>
+        </div>
+        <div class="trust-card fade-in">
+          <div class="trust-icon">
+            <!-- Microscope/modern equipment -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><path d="M9.5 10L11 11.5L14.5 8" stroke-width="2"/></svg>
+          </div>
+          <h3>Topp moderne utstyr</h3>
+          <p>Leica mikroskop og intraoral skanner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TJENESTER ===== -->
+  <section class="services" id="tjenester">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tooth-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+        </div>
+        <span class="section-label">Våre tjenester</span>
+        <h2>Alt innen moderne tannbehandling</h2>
+        <p>Kvalitet i høysetet — for behandlingens utseende og holdbarhet.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6" r="4"/><path d="M8 10l2 12"/><path d="M16 3c-1 0-2 .7-2.2 1.5-.3 1-.8 1.5-1.3 2-.5.8-.2 1.5.3 2 .3.8.3 1.2.5 2.2.3 1.5.5 2.5 1 2.5s.7-1 1-2.5c.3-1.5.5-1.5 1-2.5.5-1 .5-1.5 1-2.5S18 3 16 3Z"/></svg>
+          </div>
+          <h3>Allmenn tannbehandling</h3>
+          <p>Undersøkelser, røntgen, fyllinger, tannkjøttbehandling, rotbehandlinger og kirurgi.</p>
+          <span class="service-price">Fra kr 1 522,-</span>
+          <a href="tjenester.html#allmenn" class="link-arrow">Les mer &rarr;</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C10 2 8.5 3.2 8 4.8C7.5 6.5 6.2 7 5.3 8.2C4.5 9.5 4.8 11 5.3 12C5.8 13 6 13.5 6 13.5"/><path d="M12 2C14 2 15.5 3.2 16 4.8C16.5 6.5 17.8 7 18.7 8.2C19.5 9.5 19.2 11 18.7 12C18.2 13 18 13.5 18 13.5"/><path d="M6 13.5H18"/><rect x="9" y="13.5" width="6" height="2.5" rx="0.5"/><path d="M9.5 16L14.5 16"/><path d="M10 18L14 18"/><path d="M10.5 20L13.5 20"/><path d="M11 22L13 22"/></svg>
+          </div>
+          <h3>Implantatbehandling</h3>
+          <p>Erstatt manglende tannrot med Straumann titanskrue. En permanent løsning som ser ut og føles som ekte tenner.</p>
+          <span class="service-price">Fra kr 33 280,-</span>
+          <a href="tjenester.html#implantat" class="link-arrow">Les mer &rarr;</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10L7 4L10 8L12 3L14 8L17 4L19 10"/><path d="M5 10C5 10 5 12 5 13C5 15 7 16 12 16C17 16 19 15 19 13C19 12 19 10 19 10"/><path d="M7 16L6 22H18L17 16"/></svg>
+          </div>
+          <h3>Estetisk tannbehandling</h3>
+          <p>Kroner, broer og fasader/laminater i samarbeid med norsk tanntekniker for perfekt resultat.</p>
+          <span class="service-price">Fra kr 7 800,-</span>
+          <a href="tjenester.html#estetisk" class="link-arrow">Les mer &rarr;</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C10 4 8.5 5.2 8 6.8C7.5 8.5 6.2 9 5.3 10.2C4.5 11.5 4.8 13 5.3 14.2C5.8 15.5 6.2 16.5 6.5 17.8C7 19.5 7.3 21.5 8.5 21.5C9.7 21.5 9.7 19.5 10.2 17.8C10.7 16 11 15.5 12 15.5C13 15.5 13.3 16 13.8 17.8C14.3 19.5 14.3 21.5 15.5 21.5C16.7 21.5 17 19.5 17.5 17.8C17.8 16.5 18.2 15.5 18.7 14.2C19.2 13 19.5 11.5 18.7 10.2C17.8 9 16.5 8.5 16 6.8C15.5 5.2 14 4 12 4Z"/><path d="M3 3L4 5L3 7L1 6L3 3Z" class="sparkle"/><path d="M20 2L21 4L20 6L18 5L20 2Z" class="sparkle"/><path d="M19 14L20.5 15L19 16L17.5 15L19 14Z" class="sparkle"/></svg>
+          </div>
+          <h3>Tannbleking</h3>
+          <p>Profesjonell tannbleking for et hvitere og mer strålende smil.</p>
+          <span class="service-price">Kr 4 863,-</span>
+          <a href="tjenester.html#bleking" class="link-arrow">Les mer &rarr;</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><path d="M13 7L11 11H14L11 15" stroke-width="2"/></svg>
+          </div>
+          <h3>Visdomstenner</h3>
+          <p>Fjerning av visdomstenner, inkludert kirurgisk fjerning der dette er nødvendig.</p>
+          <span class="service-price">Ca. kr 2 434,- etter refusjon</span>
+          <a href="tjenester.html#visdomstenner" class="link-arrow">Les mer &rarr;</a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3C10.5 3 9.5 3.8 9.2 5C8.8 6.2 8 6.8 7.3 7.8C6.5 8.8 6.8 10 7.2 11C7.5 12 7.8 12.8 8 13.8C8.3 15 8.5 16.2 9.3 16.2C10.2 16.2 10.2 15 10.5 13.8C10.8 12.5 11 12 12 12C13 12 13.2 12.5 13.5 13.8C13.8 15 13.8 16.2 14.7 16.2C15.5 16.2 15.7 15 16 13.8C16.2 12.8 16.5 12 16.8 11C17.2 10 17.5 8.8 16.7 7.8C16 6.8 15.2 6.2 14.8 5C14.5 3.8 13.5 3 12 3Z"/><path d="M4 18C5 17 7 16.5 8 17.5" /><path d="M20 18C19 17 17 16.5 16 17.5"/><path d="M4 18C3 19 3 20.5 4 21.5"/><path d="M20 18C21 19 21 20.5 20 21.5"/></svg>
+          </div>
+          <h3>Tannlegeskrekk</h3>
+          <p>Vi tar ekstra god tid for deg som gruer deg. Tilpasset tempo og trygge rammer.</p>
+          <span class="service-price">Ta kontakt for en samtale</span>
+          <a href="tjenester.html#tannlegeskrekk" class="link-arrow">Les mer &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMAGE STRIP ===== -->
+  <section class="image-strip">
+    <div class="image-strip-grid">
+      <div class="image-strip-item"><img src="assets/images/klinikk-1.jpeg" alt="Klinikken innvendig" loading="lazy"></div>
+      <div class="image-strip-item"><img src="assets/images/tannlegestol.jpg" alt="Moderne tannlegestol" loading="lazy"></div>
+      <div class="image-strip-item"><img src="assets/images/klinikk-2.jpeg" alt="Klinikkens omgivelser" loading="lazy"></div>
+      <div class="image-strip-item"><img src="assets/images/xo-flow.jpg" alt="XO Flow tannlegeunit" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- ===== HVORFOR VELGE OSS ===== -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Derfor oss</span>
+        <h2>Hvorfor velge Mikkels Tannhus?</h2>
+        <p>Kvalitet i høysetet — slik blir alle fornøyd med arbeidets utseende og holdbarhet.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><path d="M9.5 10L11 11.5L14.5 8" stroke-width="2"/></svg>
+          </div>
+          <div>
+            <h3>Topp moderne utstyr</h3>
+            <p>XO Flow tannlegeunit, Leica mikroskop og intraoral skanner — noe av det mest moderne som finnes på markedet.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L4 7V12C4 16.5 7.5 20.5 12 22C16.5 20.5 20 16.5 20 12V7L12 3Z"/><path d="M12 7C11 7 10.2 7.5 10 8.2C9.7 9 9.2 9.3 8.8 10C8.3 10.7 8.5 11.5 8.8 12C9 12.7 9.2 13 9.3 13.7C9.5 14.5 9.7 15.5 10.2 15.5C10.8 15.5 10.8 14.5 11 13.7C11.2 12.8 11.3 12.5 12 12.5C12.7 12.5 12.8 12.8 13 13.7C13.2 14.5 13.2 15.5 13.8 15.5C14.3 15.5 14.5 14.5 14.7 13.7C14.8 13 15 12.7 15.2 12C15.5 11.5 15.7 10.7 15.2 10C14.8 9.3 14.3 9 14 8.2C13.8 7.5 13 7 12 7Z"/></svg>
+          </div>
+          <div>
+            <h3>Norsk tannteknikk</h3>
+            <p>Vi benytter kun norske tannteknikere med lang garanti på alle tanntekniske arbeider.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <h3>Kort ventetid</h3>
+            <p>Vi anstrenger oss for å være presise, og har ledige tider med kort ventetid — også for akutte situasjoner.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22S4 16 4 10a8 8 0 1 1 16 0c0 6-8 12-8 12Z"/><path d="M12 6C11 6 10.3 6.5 10.1 7.2C9.8 8 9.3 8.3 9 9C8.5 9.7 8.7 10.5 9 11C9.2 11.5 9.3 12 9.5 12.5C9.7 13.2 9.8 14 10.3 14C10.8 14 10.8 13.2 11 12.5C11.2 11.8 11.3 11.5 12 11.5C12.7 11.5 12.8 11.8 13 12.5C13.2 13.2 13.2 14 13.7 14C14.2 14 14.3 13.2 14.5 12.5C14.7 12 14.8 11.5 15 11C15.3 10.5 15.5 9.7 15 9C14.7 8.3 14.2 8 14 7.2C13.7 6.5 13 6 12 6Z"/></svg>
+          </div>
+          <div>
+            <h3>Historiske omgivelser</h3>
+            <p>Klinikken holder til i Dopsgate 7 på Fredensborg — et hyggelig personlig miljø med flott gammel bygningsarkitektur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ANMELDELSER ===== -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Anmeldelser</span>
+        <h2>Hva pasientene sier</h2>
+        <div class="reviews-rating">
+          <div class="reviews-stars" aria-label="5 av 5 stjerner">
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+          </div>
+          <span class="reviews-score"><a href="https://www.legelisten.no/klinikker/5019-mikkels-tannhus" target="_blank" rel="noopener">Les anmeldelser på Legelisten.no</a></span>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card fade-in">
+          <div class="review-stars" aria-label="5 av 5 stjerner">
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+          </div>
+          <p class="review-text">"Veldig dyktig og grundig tannlege. Tar seg god tid og forklarer alt underveis. Hyggelig klinikk med personlig preg. Anbefales!"</p>
+          <span class="review-source">Pasient via Legelisten.no</span>
+        </div>
+        <div class="review-card fade-in">
+          <div class="review-stars" aria-label="5 av 5 stjerner">
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+          </div>
+          <p class="review-text">"Fantastisk kvalitet på arbeidet. Har fått gjort kroner og implantater her, og alt har blitt perfekt. Bruker kun norske tannteknikere, noe som gir ekstra trygghet."</p>
+          <span class="review-source">Pasient via Legelisten.no</span>
+        </div>
+        <div class="review-card fade-in">
+          <div class="review-stars" aria-label="5 av 5 stjerner">
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#f59e0b"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.51.91-5.32L2.27 6.7l5.34-.78L10 1z"/></svg>
+          </div>
+          <p class="review-text">"Koselig klinikk i historiske omgivelser. Man glemmer fort at man er hos tannlegen! Gratis parkering er et stort pluss i Oslo sentrum."</p>
+          <span class="review-source">Pasient via Legelisten.no</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <div class="cta-tooth-decor" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+        </div>
+        <h2>Trenger du tannlege?</h2>
+        <p>Ring oss eller send en e-post. Vi har kort ventetid og gratis parkering.</p>
+        <span class="cta-phone"><a href="tel:22207292">22 20 72 92</a></span>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="kontakt.html" class="btn btn-primary btn-tooth-icon">
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg>
+            Send melding
+          </a>
+          <a href="tel:22207292" class="btn btn-secondary">Ring oss</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT BAR ===== -->
+  <section class="contact-bar">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-item fade-in">
+          <div class="contact-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+          </div>
+          <div>
+            <h3>Adresse</h3>
+            <p>Dopsgate 7<br>0177 Oslo</p>
+          </div>
+        </div>
+        <div class="contact-item fade-in">
+          <div class="contact-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+          </div>
+          <div>
+            <h3>Telefon & E-post</h3>
+            <p><a href="tel:22207292">22 20 72 92</a><br><a href="mailto:mikkelstannhus@gmail.com">mikkelstannhus@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-item fade-in">
+          <div class="contact-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+          </div>
+          <div>
+            <h3>Åpningstider</h3>
+            <p>Man–fre: 08:00–16:00<br>Gratis parkering</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP ===== -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000!2d10.747!3d59.9195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7c5c38a0f7%3A0x0!2sDopsgate%207%2C%200177%20Oslo!5e0!3m2!1sno!2sno!4v1700000000000!5m2!1sno!2sno"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Kart til Mikkels Tannhus">
+    </iframe>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpg" alt="Mikkels Tannhus">
+          </a>
+          <p>Hyggelig tannklinikk på Fredensborg i Oslo sentrum. Kvalitet i høysetet med moderne utstyr og personlig service.</p>
+        </div>
+        <div>
+          <h4>Hurtiglenker</h4>
+          <ul class="footer-links">
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="priser.html">Priser</a></li>
+            <li><a href="teamet.html">Teamet</a></li>
+            <li><a href="om.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Åpningstider</h4>
+          <ul class="footer-links">
+            <li>Man–fre: 08–16</li>
+            <li>Gratis parkering</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul class="footer-links">
+            <li><a href="tel:22207292">22 20 72 92</a></li>
+            <li><a href="mailto:mikkelstannhus@gmail.com">mikkelstannhus@gmail.com</a></li>
+            <li>Dopsgate 7</li>
+            <li>0177 Oslo</li>
+          </ul>
+          <div style="margin-top: 16px; display: flex; gap: 12px; align-items: center;">
+            <a href="kontakt.html" class="btn btn-primary btn-nav">Bestill time</a>
+            <a href="https://www.facebook.com/Mikkels-Tannhus-194707723928622/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="color: #fff; display: inline-flex;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Mikkels Tannhus</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== DEMO BANNER STICKY ===== -->
+  <div class="demo-banner-sticky">Demo — laget av sivertlund.dev@gmail.com</div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tjenester — Mikkels Tannhus</title>
+  <meta name="description" content="Oversikt over alle tannbehandlinger ved Mikkels Tannhus. Allmenn tannbehandling, implantat, estetisk tannbehandling, tannbleking, tannregulering, visdomstenner og hjelp med tannlegeskrekk.">
+  <meta name="keywords" content="tannbehandling oslo, tannlege tjenester, implantat, bleking, estetisk tannbehandling, tannlegeskrekk, kroner, broer, tannregulering, clear correct">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tjenester — Mikkels Tannhus">
+  <meta property="og:description" content="For oss er det viktig at du får den behandlingen som passer deg og dine tenner. Vi setter høye krav til oss selv og arbeidet vi utfører.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nb_NO">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== DEMO BANNER ===== -->
+  <div class="demo-banner">Demo — laget av sivertlund.dev@gmail.com</div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.jpg" alt="Mikkels Tannhus" loading="eager">
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="tjenester.html" class="active">Tjenester</a></li>
+          <li><a href="priser.html">Priser</a></li>
+          <li><a href="teamet.html">Teamet</a></li>
+          <li><a href="om.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html" class="btn btn-primary btn-nav">Bestill time</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Meny">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-teeth" aria-hidden="true">
+      <svg class="page-hero-tooth pht-1" viewBox="0 0 24 24" fill="rgba(255,255,255,0.06)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+      <svg class="page-hero-tooth pht-2" viewBox="0 0 24 24" fill="rgba(255,255,255,0.04)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+      <svg class="page-hero-tooth pht-3" viewBox="0 0 24 24" fill="rgba(255,255,255,0.05)"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+    </div>
+    <div class="container">
+      <h1>Våre tjenester</h1>
+      <p>For oss er det viktig at du får den behandlingen som passer deg og dine tenner. Vi setter høye krav til oss selv og arbeidet vi utfører.</p>
+    </div>
+  </section>
+
+  <!-- ===== HURTIGNAVIGASJON ===== -->
+  <nav class="services-nav" aria-label="Tjenester">
+    <div class="container">
+      <ul class="services-nav-list">
+        <li><a href="#allmenn">Allmenn</a></li>
+        <li><a href="#implantat">Implantat</a></li>
+        <li><a href="#estetisk">Estetisk</a></li>
+        <li><a href="#visdomstenner">Visdomstenner</a></li>
+        <li><a href="#tannlegeskrekk">Tannlegeskrekk</a></li>
+        <li><a href="#rehabilitering">Rehabilitering</a></li>
+        <li><a href="#tannregulering">Tannregulering</a></li>
+        <li><a href="#bleking">Bleking</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== TJENESTER GRID ===== -->
+  <section class="services-grid-section">
+    <div class="container">
+      <div class="services-grid-detail">
+
+        <!-- Allmenn tannbehandling -->
+        <div class="service-card-detail fade-in" id="allmenn">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6" r="4"/><path d="M8 10l2 12"/><path d="M16 3c-1 0-2 .7-2.2 1.5-.3 1-.8 1.5-1.3 2-.5.8-.2 1.5.3 2 .3.8.3 1.2.5 2.2.3 1.5.5 2.5 1 2.5s.7-1 1-2.5c.3-1.5.5-1.5 1-2.5.5-1 .5-1.5 1-2.5S18 3 16 3Z"/></svg>
+          </div>
+          <h2>Allmenn tannbehandling</h2>
+          <p>Undersøkelser, røntgen, fyllinger, tannkjøttbehandling, rotbehandlinger, kirurgibehandling, kronebehandling og brobehandling. Vi bruker XO Flow tannlegeunit og Leica mikroskop for presise behandlinger.</p>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Implantatbehandling -->
+        <div class="service-card-detail fade-in" id="implantat">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C10.5 2 9.5 2.8 9.2 3.8C8.8 5 8 5.5 7.3 6.5C6.5 7.5 6.8 8.8 7.2 9.8C7.5 10.8 7.8 11.5 8 12.5C8.3 13.8 8.5 14.5 9.3 14.5C10 14.5 10 13.5 10.3 12.5C10.7 11 11 10.5 12 10.5C13 10.5 13.3 11 13.7 12.5C14 13.5 14 14.5 14.7 14.5C15.5 14.5 15.7 13.8 16 12.5C16.2 11.5 16.5 10.8 16.8 9.8C17.2 8.8 17.5 7.5 16.7 6.5C16 5.5 15.2 5 14.8 3.8C14.5 2.8 13.5 2 12 2Z"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="10" y1="16.5" x2="14" y2="16.5"/><line x1="10.5" y1="18.5" x2="13.5" y2="18.5"/><line x1="11" y1="20.5" x2="13" y2="20.5"/></svg>
+          </div>
+          <h2>Implantatbehandling</h2>
+          <p>Erstatter manglende tannrot med titanskrue som gror fast i benet i kjeven. Vi bruker Straumann implantater. Vurdering med panorama og supplerende røntgenbilder og behandlingsplan med kostnadsoverslag koster 2 288 kr.</p>
+          <span class="service-price">Priseksempel: enkelt implantat med fullkeramisk krone (alt inkludert) kr 33 280,-</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Estetisk tannbehandling -->
+        <div class="service-card-detail fade-in" id="estetisk">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10L7 4L10 8L12 3L14 8L17 4L19 10"/><path d="M5 10C5 10 5 12 5 13C5 15 7 16 12 16C17 16 19 15 19 13C19 12 19 10 19 10"/><path d="M7 16L6 22H18L17 16"/></svg>
+          </div>
+          <h2>Estetisk tannbehandling</h2>
+          <p>Kroner, broer og fasader/laminater. Vi samarbeider med tanntekniker Jørgen Gad ved Art Pro Dental Design. Kroner og fasader/laminater fremstilt og tilpasset mens du sitter i stolen hos tannteknikeren.</p>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Fjerning av visdomstenner -->
+        <div class="service-card-detail fade-in" id="visdomstenner">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><path d="M9 13L8.5 18" stroke-dasharray="2 2"/><path d="M12 12L12 17" stroke-dasharray="2 2"/><path d="M15 13L15.5 18" stroke-dasharray="2 2"/></svg>
+          </div>
+          <h2>Fjerning av visdomstenner</h2>
+          <p>Inkludert kirurgisk fjerning der dette er nødvendig. Vi sørger for trygg og effektiv behandling.</p>
+          <span class="service-price">Ca. kr 2 434,- etter trygderefusjon</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Tannbleking -->
+        <div class="service-card-detail fade-in" id="bleking">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C10 4 8.5 5.2 8 6.8C7.5 8.5 6.2 9 5.3 10.2C4.5 11.5 4.8 13 5.3 14.2C5.8 15.5 6.2 16.5 6.5 17.8C7 19.5 7.3 21.5 8.5 21.5C9.7 21.5 9.7 19.5 10.2 17.8C10.7 16 11 15.5 12 15.5C13 15.5 13.3 16 13.8 17.8C14.3 19.5 14.3 21.5 15.5 21.5C16.7 21.5 17 19.5 17.5 17.8C17.8 16.5 18.2 15.5 18.7 14.2C19.2 13 19.5 11.5 18.7 10.2C17.8 9 16.5 8.5 16 6.8C15.5 5.2 14 4 12 4Z"/><path d="M3 3L4 5L3 7L1 6L3 3Z" class="sparkle"/><path d="M20 2L21 4L20 6L18 5L20 2Z" class="sparkle"/><path d="M19 14L20.5 15L19 16L17.5 15L19 14Z" class="sparkle"/></svg>
+          </div>
+          <h2>Tannbleking</h2>
+          <p>Profesjonell tannbleking for et hvitere og friskere smil.</p>
+          <span class="service-price">2 kjever: kr 4 863,-</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Tannregulering -->
+        <div class="service-card-detail fade-in" id="tannregulering">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12C4 8 7 5 12 5C17 5 20 8 20 12"/><path d="M4 12C4 16 7 19 12 19C17 19 20 16 20 12"/><path d="M7 12H9M10.5 12H13.5M15 12H17"/><path d="M8 9V12M11 8.5V12M13 8.5V12M16 9V12"/></svg>
+          </div>
+          <h2>Tannregulering — Clear Correct</h2>
+          <p>"Usynlig tannregulering" fra Clear Correct, som er en del av Straumann Group. En diskret og komfortabel løsning for et rettere smil.</p>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TANNLEGESKREKK (FREMHEVET) ===== -->
+  <section class="service-highlight-section" id="tannlegeskrekk">
+    <div class="container">
+      <div class="service-highlight-inner fade-in">
+        <div class="service-highlight-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3C10.5 3 9.5 3.8 9.2 5C8.8 6.2 8 6.8 7.3 7.8C6.5 8.8 6.8 10 7.2 11C7.5 12 7.8 12.8 8 13.8C8.3 15 8.5 16.2 9.3 16.2C10.2 16.2 10.2 15 10.5 13.8C10.8 12.5 11 12 12 12C13 12 13.2 12.5 13.5 13.8C13.8 15 13.8 16.2 14.7 16.2C15.5 16.2 15.7 15 16 13.8C16.2 12.8 16.5 12 16.8 11C17.2 10 17.5 8.8 16.7 7.8C16 6.8 15.2 6.2 14.8 5C14.5 3.8 13.5 3 12 3Z"/><path d="M4 18C5.5 17 8 16.5 9 17.5"/><path d="M20 18C18.5 17 16 16.5 15 17.5"/><path d="M4 18C2.5 19 2.5 20.5 4 21.5"/><path d="M20 18C21.5 19 21.5 20.5 20 21.5"/></svg>
+        </div>
+        <div class="service-highlight-content">
+          <h2>Tannlegeskrekk</h2>
+          <p>Vi tar ekstra god tid for pasienter med tannlegeskrekk. Tilpasset tempo og trygge rammer. Det første steget er alltid en uforpliktende samtale.</p>
+          <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Ta kontakt for en uforpliktende samtale</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REHABILITERING (FREMHEVET) ===== -->
+  <section class="service-highlight-section" id="rehabilitering">
+    <div class="container">
+      <div class="service-highlight-inner fade-in">
+        <div class="service-highlight-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><path d="M13 6L10.5 11H13.5L11 16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="service-highlight-content">
+          <h2>Rehabilitering av skadede tannsett</h2>
+          <p>Rehabilitering av sterkt skadede og slitte tannsett. I flere tilfeller vil trygden dekke mye av behandlingen. Vi utarbeider en helhetlig behandlingsplan tilpasset dine behov.</p>
+          <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Ta kontakt for vurdering</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <div class="cta-tooth-decor" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+        </div>
+        <h2>Klar for å bestille time?</h2>
+        <p>Ring oss eller bruk kontaktskjemaet. Vi svarer deg raskt.</p>
+        <span class="cta-phone"><a href="tel:22207292">22 20 72 92</a></span>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Send melding</a>
+          <a href="tel:22207292" class="btn btn-secondary">Ring oss</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpg" alt="Mikkels Tannhus">
+          </a>
+          <p>Komplett tannhelsetilbud i Oslo. For oss er det viktig at du får den behandlingen som passer deg og dine tenner.</p>
+        </div>
+        <div>
+          <h4>Hurtiglenker</h4>
+          <ul class="footer-links">
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="priser.html">Priser</a></li>
+            <li><a href="teamet.html">Teamet</a></li>
+            <li><a href="om.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tjenester</h4>
+          <ul class="footer-links">
+            <li><a href="tjenester.html#allmenn">Allmenn tannbehandling</a></li>
+            <li><a href="tjenester.html#implantat">Implantatbehandling</a></li>
+            <li><a href="tjenester.html#estetisk">Estetisk tannbehandling</a></li>
+            <li><a href="tjenester.html#tannlegeskrekk">Tannlegeskrekk</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul class="footer-links">
+            <li><a href="tel:22207292">22 20 72 92</a></li>
+            <li><a href="mailto:mikkelstannhus@gmail.com">mikkelstannhus@gmail.com</a></li>
+            <li>Dopsgate 7, 0177 Oslo</li>
+            <li>Man–fre: 08–16</li>
+          </ul>
+          <div style="margin-top: 16px;">
+            <a href="kontakt.html" class="btn btn-primary btn-nav">Bestill time</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Mikkels Tannhus</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== DEMO BANNER STICKY ===== -->
+  <div class="demo-banner-sticky">Demo — laget av sivertlund.dev@gmail.com</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
