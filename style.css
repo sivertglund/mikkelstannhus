@@ -6,12 +6,13 @@
 }
 
 :root {
-  --primary: #8B1A1A;
-  --primary-dark: #6E1414;
-  --primary-light: #FAE8E8;
-  --secondary: #2C2C2C;
-  --accent: #8B1A1A;
-  --accent-hover: #6E1414;
+  --primary: #1A6B9C;
+  --primary-dark: #145980;
+  --primary-light: #E8F4FA;
+  --secondary: #2C3E50;
+  --accent: #27AE60;
+  --accent-hover: #219a52;
+  --nav-hover: #8B1A1A;
   --bg: #F8FAFB;
   --white: #FFFFFF;
   --text: #333333;
@@ -174,7 +175,7 @@ section {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--primary);
+  background: var(--nav-hover);
   transition: width var(--transition);
 }
 
@@ -184,7 +185,7 @@ section {
 }
 
 .nav-links a:not(.btn):hover {
-  color: var(--primary);
+  color: var(--nav-hover);
 }
 
 .nav-links a:not(.btn).active {
@@ -207,16 +208,16 @@ section {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #a02020, #8B1A1A);
+  background: linear-gradient(135deg, #2ebd6b, #22a858);
   color: var(--white);
-  box-shadow: 0 2px 8px rgba(139, 26, 26, 0.25);
+  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.25);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #b82828, #a02020);
+  background: linear-gradient(135deg, #34d477, #27ae60);
   color: var(--white);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(139, 26, 26, 0.35);
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.35);
 }
 
 .btn-secondary {
@@ -294,7 +295,7 @@ section {
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 60%, #a02020 100%);
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 60%, #1a8bc7 100%);
   color: var(--white);
   padding: 100px 0 120px;
   position: relative;
@@ -402,7 +403,7 @@ section {
 
 /* ===== TRUST BADGES ===== */
 .trust {
-  background: linear-gradient(160deg, #f8eaea 0%, #faf0f0 40%, #f6eeee 70%, #f8f4ee 100%);
+  background: linear-gradient(160deg, #eaf3f8 0%, #f1f8f0 40%, #f0eef6 70%, #f8f4ee 100%);
   padding: 60px 0;
   margin-top: -40px;
   position: relative;
@@ -473,9 +474,9 @@ section {
 
 /* Varierte ikonfarger per trust-card */
 .trust-card:nth-child(1) .trust-icon { background: rgba(26, 107, 156, 0.15); }
-.trust-card:nth-child(1) .trust-icon svg { color: #8B1A1A; }
+.trust-card:nth-child(1) .trust-icon svg { color: #1A6B9C; }
 .trust-card:nth-child(2) .trust-icon { background: rgba(39, 174, 96, 0.15); }
-.trust-card:nth-child(2) .trust-icon svg { color: #8B1A1A; }
+.trust-card:nth-child(2) .trust-icon svg { color: #27AE60; }
 .trust-card:nth-child(3) .trust-icon { background: rgba(142, 68, 173, 0.13); }
 .trust-card:nth-child(3) .trust-icon svg { color: #8E44AD; }
 .trust-card:nth-child(4) .trust-icon { background: rgba(230, 126, 34, 0.13); }
@@ -542,15 +543,15 @@ section {
 
 /* Lik gradient på alle tjeneste-kort */
 .service-card {
-  background: linear-gradient(135deg, #ffffff 0%, #fbeeee 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #eef6fb 100%);
   border-color: rgba(26, 107, 156, 0.10);
 }
 
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: #8B1A1A;
-  background: linear-gradient(135deg, #fef8f8 0%, #f5e3e3 100%);
+  border-color: #1A6B9C;
+  background: linear-gradient(135deg, #f8fbfe 0%, #e3eff9 100%);
 }
 
 .service-icon {
@@ -1118,7 +1119,7 @@ section {
 /* Highlight sections (tannlegevakt, tannlegeskrekk) */
 .service-highlight-section {
   padding: 60px 0;
-  background: linear-gradient(135deg, #fbeeee 0%, #f8f0f0 100%);
+  background: linear-gradient(135deg, #eef6fb 0%, #f0f8f2 100%);
 }
 
 .service-highlight--emergency {
@@ -2176,7 +2177,7 @@ section {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(139, 26, 26, 0.04), transparent);
+  background: linear-gradient(90deg, transparent, rgba(26, 107, 156, 0.04), transparent);
   transition: left 0.6s ease;
   pointer-events: none;
 }
@@ -2432,7 +2433,7 @@ a.contact-quick-card:hover {
 }
 
 .sidebar-card--accent {
-  background: linear-gradient(135deg, #fbeeee 0%, #f8f0f0 100%);
+  background: linear-gradient(135deg, #eef6fb 0%, #f0f8f2 100%);
   border-color: rgba(39, 174, 96, 0.15);
 }
 
@@ -2618,7 +2619,7 @@ a.contact-quick-card:hover {
 
 /* Service detail highlight section (tannlegeskrekk) */
 .service-detail--highlight {
-  background: linear-gradient(135deg, #fbeeee 0%, #f8f0f0 100%);
+  background: linear-gradient(135deg, #eef6fb 0%, #f0f8f2 100%);
   border: none;
 }
 
