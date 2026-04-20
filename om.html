@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Om oss — Mikkels Tannhus</title>
   <meta name="description" content="Les om Mikkels Tannhus — tannklinikk i Oslo sentrum med over 25 års erfaring. Kvalitet, moderne utstyr og personlig service.">
+  <meta property="og:title" content="Om oss — Mikkels Tannhus">
+  <meta property="og:description" content="Les om Mikkels Tannhus — tannklinikk i Oslo sentrum med over 25 års erfaring. Kvalitet, moderne utstyr og personlig service.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nb_NO">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="canonical" href="https://www.mikkelstannhus.no/om.html">
+  <meta name="theme-color" content="#1A6B9C">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +22,7 @@
 </head>
 <body>
 
+  <a href="#main" class="skip-link">Hopp til innhold</a>
 
   <!-- ===== HEADER ===== -->
   <header class="header">
@@ -32,13 +40,15 @@
           <li><a href="kontakt.html" class="btn btn-primary btn-nav">Bestill time</a></li>
         </ul>
       </nav>
-      <button class="hamburger" id="hamburger" aria-label="Meny">
+      <button class="hamburger" id="hamburger" aria-label="Meny" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
   </header>
+
+  <main id="main">
 
   <!-- ===== PAGE HERO ===== -->
   <section class="page-hero">
@@ -58,14 +68,14 @@
     <div class="container">
       <div class="about-story-grid fade-in">
         <div class="about-story-image">
-          <img src="assets/images/klinikk-1.jpeg" alt="Mikkels Tannhus i Dopsgate 7, Oslo" loading="lazy">
+          <img src="assets/images/venterom.jpg" alt="Venteværelset hos Mikkels Tannhus" loading="lazy">
         </div>
         <div class="about-story-text">
           <span class="section-label">Om klinikken</span>
           <h2>Over 25 år i Oslo sentrum</h2>
           <p>Mikkels Tannhus er oppkalt etter grunnleggeren, tannlege og spesialist i Periodonti, Mikkel Kardel. Klinikken ble startet i Dopsgate 7 på Fredensborg, og har vært et kjent tannlegekontor i Oslo sentrum i over 25 år. I 2006 overtok hans sønn, tannlege Esben Reimers Kardel, driften av klinikken.</p>
           <p>Mikkels Tannhus holder til i historiske omgivelser i Dopsgate 7, på Fredensborg midt i Oslo sentrum. Klinikkens miljø utstråler varme og har et hyggelig personlig preg. Man glemmer fort at man er hos tannlegen når man lener seg tilbake i et venterom inspirert av flott gammel bygningsarkitektur.</p>
-          <a href="kontakt.html" class="btn btn-secondary" style="margin-top: 8px;">Ta kontakt &rarr;</a>
+          <a href="kontakt.html" class="btn btn-secondary">Ta kontakt &rarr;</a>
         </div>
       </div>
     </div>
@@ -125,20 +135,20 @@
       </div>
       <div class="gallery-grid fade-in">
         <div class="gallery-item gallery-item--wide">
-          <img src="assets/images/klinikk-1.jpeg" alt="Mikkels Tannhus i Dopsgate 7, Oslo" loading="lazy">
-          <span class="gallery-caption">Klinikken i Dopsgate 7</span>
+          <img src="assets/images/behandlingsrom.jpg" alt="Behandlingsrom hos Mikkels Tannhus" loading="lazy">
+          <span class="gallery-caption">Behandlingsrommet</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/tannlegestol.jpg" alt="Behandlingsrom med tannlegestol" loading="lazy">
-          <span class="gallery-caption">Behandlingsrom</span>
+          <img src="assets/images/behandling-aksjon.jpg" alt="Tannlege behandler pasient" loading="lazy">
+          <span class="gallery-caption">Behandling</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/klinikk-2.jpeg" alt="Behandlingsrom med moderne utstyr" loading="lazy">
+          <img src="assets/images/resepsjon.jpg" alt="Resepsjonen hos Mikkels Tannhus" loading="lazy">
+          <span class="gallery-caption">Resepsjonen</span>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/arbeidsstasjon.jpg" alt="Arbeidsstasjon med moderne utstyr" loading="lazy">
           <span class="gallery-caption">Moderne utstyr</span>
-        </div>
-        <div class="gallery-item">
-          <img src="assets/images/xo-flow.jpg" alt="XO Flow tannlegeunit" loading="lazy">
-          <span class="gallery-caption">XO Flow tannlegeunit</span>
         </div>
         <div class="gallery-item">
           <img src="assets/images/parkering.jpg" alt="Gratis parkering utenfor klinikken" loading="lazy">
@@ -205,13 +215,15 @@
         <h2>Bestill time i dag</h2>
         <p>Ring oss eller bruk kontaktskjemaet. Vi svarer deg raskt.</p>
         <span class="cta-phone"><a href="tel:22207292">22 20 72 92</a></span>
-        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <div class="cta-buttons">
           <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Send melding</a>
           <a href="tel:22207292" class="btn btn-secondary">Ring oss</a>
         </div>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
@@ -238,7 +250,7 @@
           <ul class="footer-links">
             <li>Man–fre: 08:00–16:00</li>
           </ul>
-          <div style="margin-top: 16px;">
+          <div class="footer-social">
             <a href="https://www.facebook.com/Mikkels-Tannhus-194707723928622/" target="_blank" rel="noopener noreferrer">Facebook</a>
           </div>
         </div>
@@ -250,7 +262,7 @@
             <li>Dopsgate 7</li>
             <li>0177 Oslo</li>
           </ul>
-          <div style="margin-top: 16px;">
+          <div class="footer-cta">
             <a href="kontakt.html" class="btn btn-primary btn-nav">Bestill time</a>
           </div>
         </div>
