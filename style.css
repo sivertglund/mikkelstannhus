@@ -339,6 +339,13 @@ textarea:focus-visible {
   font-size: clamp(2.2rem, 5vw, 3.4rem);
 }
 
+.hero-underline {
+  text-decoration: underline;
+  text-decoration-color: rgba(255,255,255,0.4);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+}
+
 .hero-content p {
   font-size: 1.15rem;
   line-height: 1.8;
