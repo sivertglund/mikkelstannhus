@@ -3066,7 +3066,7 @@ a.contact-quick-card:hover {
   }
 
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
 
   .hero-lead {
@@ -3249,19 +3249,23 @@ a.contact-quick-card:hover {
     font-size: 0.72rem;
   }
 
-  /* Reviews: single col, compact */
+  /* Reviews: horizontal scroll */
   .reviews-section {
     padding: 40px 0;
   }
 
   .reviews-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 80vw);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     gap: 16px;
     margin-top: 24px;
+    padding-bottom: 8px;
   }
 
   .review-card {
     padding: 20px;
+    min-width: 0;
   }
 
   .review-text {
