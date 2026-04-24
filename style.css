@@ -3038,7 +3038,14 @@ a.contact-quick-card:hover {
   }
 
   .hero-image {
-    display: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    border-radius: var(--radius-sm);
+    aspect-ratio: 16/9;
   }
 
   .hero-teeth-decor,
@@ -3059,7 +3066,7 @@ a.contact-quick-card:hover {
   }
 
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .hero-lead {
@@ -3153,9 +3160,15 @@ a.contact-quick-card:hover {
     grid-template-columns: 1fr;
   }
 
-  /* Image strip: 2 columns */
+  /* Image strip: horizontal scroll */
   .image-strip-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 45vw);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .image-strip-item {
+    aspect-ratio: 4/3;
   }
 
   /* Why Us: 2 columns, compact */
@@ -3434,10 +3447,6 @@ a.contact-quick-card:hover {
 
   .cta-phone {
     font-size: 1.4rem;
-  }
-
-  .image-strip-grid {
-    grid-template-columns: 1fr;
   }
 
   .gallery-grid {
