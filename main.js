@@ -97,8 +97,8 @@ if (heroImg) {
   }, { passive: true });
 }
 
-// ===== Animate trust card numbers =====
-const trustCards = document.querySelectorAll('.trust-card');
+// ===== Animate trust card items =====
+const trustItems = document.querySelectorAll('.trust-card');
 const trustObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -108,10 +108,10 @@ const trustObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.3 });
 
-trustCards.forEach(card => trustObserver.observe(card));
+trustItems.forEach(item => trustObserver.observe(item));
 
-// ===== Service card icon bounce on scroll =====
-const serviceCards = document.querySelectorAll('.service-card');
+// ===== Service card/compact icon bounce on scroll =====
+const serviceCards = document.querySelectorAll('.service-card, .service-compact');
 const serviceObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -140,10 +140,10 @@ if (floatingTeeth.length > 0) {
   }, { passive: true });
 }
 
-// ===== Sparkle effect on service card hover =====
-document.querySelectorAll('.service-card').forEach(card => {
+// ===== Sparkle effect on service card/compact hover =====
+document.querySelectorAll('.service-card, .service-compact').forEach(card => {
   card.addEventListener('mouseenter', () => {
-    const icon = card.querySelector('.service-icon');
+    const icon = card.querySelector('.service-icon, .service-compact-icon');
     if (icon) {
       icon.style.animation = 'none';
       icon.offsetHeight; // trigger reflow
