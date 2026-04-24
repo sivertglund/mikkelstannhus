@@ -3024,13 +3024,17 @@ a.contact-quick-card:hover {
     display: flex;
   }
 
+  section {
+    padding: 40px 0;
+  }
+
   .hero {
-    padding: 60px 0 80px;
+    padding: 40px 0 50px;
   }
 
   .hero .container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 24px;
   }
 
   .hero-image {
@@ -3055,38 +3059,222 @@ a.contact-quick-card:hover {
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
-  .wave-divider svg { height: 30px; }
+  .hero-lead {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-highlights {
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+  }
+
+  .hero-hours {
+    margin-top: 16px;
+  }
+
+  .wave-divider svg { height: 25px; }
+
+  /* Trust: 2x2 compact */
+  .trust {
+    padding: 32px 0 20px;
+  }
 
   .trust-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
-  .services-grid,
+  .trust-card {
+    padding: 20px 14px;
+  }
+
+  .trust-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .trust-card p {
+    font-size: 0.8rem;
+  }
+
+  .trust-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 10px;
+  }
+
+  .trust-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* Services: keep 2 columns on mobile */
   .services-compact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .service-compact {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .service-compact-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+  }
+
+  .service-compact-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .service-compact-info h3 {
+    font-size: 0.82rem;
+  }
+
+  .service-compact-info p {
+    display: none;
+  }
+
+  .service-compact-arrow {
+    display: none;
+  }
+
+  .services .section-header {
+    margin-bottom: 28px;
+  }
+
+  .services-grid {
     grid-template-columns: 1fr;
   }
 
-  .team-preview-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  /* Image strip: 2 columns */
+  .image-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .team-grid {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
+  /* Why Us: 2 columns, compact */
+  .why-us {
+    padding: 40px 0;
   }
 
   .why-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
-  .contact-grid,
+  .why-card {
+    padding: 16px;
+    gap: 12px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-card-icon {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+  }
+
+  .why-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .why-card p {
+    font-size: 0.82rem;
+    display: none;
+  }
+
+  .why-us .section-header {
+    margin-bottom: 28px;
+  }
+
+  .why-us .section-header p {
+    display: none;
+  }
+
+  /* Team preview: horizontal scroll row */
+  .team-preview {
+    padding: 40px 0;
+  }
+
+  .team-preview .section-header {
+    margin-bottom: 24px;
+  }
+
+  .team-preview-grid {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .team-preview-card {
+    min-width: 110px;
+    max-width: 110px;
+  }
+
+  .team-preview-avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .team-preview-card h3 {
+    font-size: 0.82rem;
+  }
+
+  .team-preview-card .role {
+    font-size: 0.72rem;
+  }
+
+  /* Reviews: single col, compact */
+  .reviews-section {
+    padding: 40px 0;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .review-card {
+    padding: 20px;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+  }
+
+  .reviews-section .section-header {
+    margin-bottom: 16px;
+  }
+
+  /* Contact CTA: compact */
+  .contact-cta .container {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  .contact-cta-header {
+    margin-bottom: 28px;
+  }
+
   .contact-cta-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -3112,9 +3300,18 @@ a.contact-quick-card:hover {
     grid-template-columns: 1fr;
   }
 
+  /* Footer */
+  .footer {
+    padding: 40px 0 24px;
+  }
+
   .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
   }
 
   .footer-bottom {
@@ -3123,6 +3320,26 @@ a.contact-quick-card:hover {
     text-align: center;
   }
 
+  /* Section headers: tighter */
+  .section-header {
+    margin-bottom: 28px;
+  }
+
+  .section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-header p {
+    font-size: 0.95rem;
+  }
+
+  .section-tooth-icon {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+
+  /* Other pages */
   .team-detail {
     grid-template-columns: 1fr;
     text-align: center;
@@ -3130,8 +3347,8 @@ a.contact-quick-card:hover {
 
   .team-detail-avatar {
     margin: 0 auto;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
   }
 
   .team-detail .specialties {
@@ -3139,11 +3356,7 @@ a.contact-quick-card:hover {
   }
 
   .cta-inner {
-    padding: 40px 24px;
-  }
-
-  .image-strip-grid {
-    grid-template-columns: repeat(2, 1fr);
+    padding: 32px 20px;
   }
 
   .gallery-grid {
@@ -3156,35 +3369,17 @@ a.contact-quick-card:hover {
 
   .about-story-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 
-  .about-story {
-    padding: 60px 0;
+  .about-story, .about-values-section, .practical-section, .team-showcase {
+    padding: 40px 0;
   }
 
-  .about-values-section {
-    padding: 60px 0;
-  }
-
-  .practical-section {
-    padding: 60px 0;
-  }
-
-  .values-grid {
+  .values-grid, .practical-cards {
     grid-template-columns: 1fr;
     max-width: 400px;
     margin: 0 auto;
-  }
-
-  .practical-cards {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .team-showcase {
-    padding: 60px 0;
   }
 
   .team-cards-grid {
@@ -3192,11 +3387,36 @@ a.contact-quick-card:hover {
     max-width: 380px;
     margin: 0 auto;
   }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Map smaller */
+  .map-section iframe {
+    height: 280px;
+  }
+
+  /* Header gradient: simpler on mobile */
+  .header {
+    background: #FFFFFF;
+  }
 }
 
 @media (max-width: 480px) {
   .trust-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-compact-grid {
+    gap: 6px;
+  }
+
+  .service-compact {
+    padding: 10px 12px;
+    gap: 8px;
   }
 
   .hero-buttons {
@@ -3206,6 +3426,10 @@ a.contact-quick-card:hover {
   .hero-buttons .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
   }
 
   .cta-phone {
@@ -3227,6 +3451,18 @@ a.contact-quick-card:hover {
   .price-table td {
     padding: 14px 16px;
     font-size: 0.88rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+
+  .why-card p {
+    display: none;
   }
 }
 
